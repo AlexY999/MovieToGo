@@ -29,6 +29,7 @@
 		1F560DC52A7B1919005C5FF0 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DC42A7B1919005C5FF0 /* FavoriteViewController.swift */; };
 		1F560DC72A7B1A97005C5FF0 /* BaseMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DC62A7B1A97005C5FF0 /* BaseMovieViewController.swift */; };
 		1F560DC92A7B98AE005C5FF0 /* SegueTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DC82A7B98AD005C5FF0 /* SegueTags.swift */; };
+		1F560DCB2A7BC0AF005C5FF0 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DCA2A7BC0AF005C5FF0 /* FontHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		1F560DC42A7B1919005C5FF0 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		1F560DC62A7B1A97005C5FF0 /* BaseMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMovieViewController.swift; sourceTree = "<group>"; };
 		1F560DC82A7B98AD005C5FF0 /* SegueTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueTags.swift; sourceTree = "<group>"; };
+		1F560DCA2A7BC0AF005C5FF0 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
+		1F560DCC2A7BC784005C5FF0 /* MainConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MainConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,7 @@
 				1F560D942A798ED9005C5FF0 /* Info.plist */,
 				1F560D862A798ED8005C5FF0 /* AppDelegate.swift */,
 				1F560D882A798ED8005C5FF0 /* SceneDelegate.swift */,
+				1F560DCC2A7BC784005C5FF0 /* MainConfig.xcconfig */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,6 +181,7 @@
 				1F560DB92A7B0CB8005C5FF0 /* LocalizedKey.swift */,
 				1F560DAF2A7AF109005C5FF0 /* UIExtensions.swift */,
 				1F560DC82A7B98AD005C5FF0 /* SegueTags.swift */,
+				1F560DCA2A7BC0AF005C5FF0 /* FontHelper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				1F560D892A798ED8005C5FF0 /* SceneDelegate.swift in Sources */,
 				1F560DC92A7B98AE005C5FF0 /* SegueTags.swift in Sources */,
 				1F560DA82A7A6A91005C5FF0 /* TMDbAPI.swift in Sources */,
+				1F560DCB2A7BC0AF005C5FF0 /* FontHelper.swift in Sources */,
 				1F560DBA2A7B0CB8005C5FF0 /* LocalizedKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -435,6 +441,7 @@
 		};
 		1F560D982A798ED9005C5FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F560DCC2A7BC784005C5FF0 /* MainConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,6 +450,7 @@
 				DEVELOPMENT_TEAM = 7MVTQDNZRH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MovieToGo/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MovieToGo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -464,6 +472,7 @@
 		};
 		1F560D992A798ED9005C5FF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F560DCC2A7BC784005C5FF0 /* MainConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +481,7 @@
 				DEVELOPMENT_TEAM = 7MVTQDNZRH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MovieToGo/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MovieToGo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

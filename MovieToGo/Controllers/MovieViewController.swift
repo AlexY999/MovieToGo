@@ -14,11 +14,10 @@ class MovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        headerView.backButton.isHidden = false
-        headerView.onBack = onBackButtonClick
+        headerView.configure(onBackButtonClick: onBackButtonClick)
         
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
-
+        
         setMovie()
     }
     
@@ -51,23 +50,23 @@ class MovieViewController: UIViewController {
     }
     
     private func showAlertWithMovieName() {
-         guard let movieName = movie?.title else {
-             return
-         }
-         
-         let title = LocalizedKey.playMovie.localized
-         let message = String(format: LocalizedKey.playMovieConfirmation.localized, movieName)
-         
-         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-         alert.addAction(UIAlertAction(title: LocalizedKey.cancel.localized, style: .cancel, handler: nil))
-         alert.addAction(UIAlertAction(title: LocalizedKey.play.localized, style: .default, handler: { _ in
-             print("\(movieName)")
-         }))
-         
-         self.present(alert, animated: true, completion: nil)
-     }
-     
-     @IBAction func onPlayButtonClick(_ sender: Any) {
-         showAlertWithMovieName()
-     }
+        guard let movieName = movie?.title else {
+            return
+        }
+        
+        let title = LocalizedKey.playMovie.localized
+        let message = String(format: LocalizedKey.playMovieConfirmation.localized, movieName)
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: LocalizedKey.cancel.localized, style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: LocalizedKey.play.localized, style: .default, handler: { _ in
+            print("\(movieName)")
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func onPlayButtonClick(_ sender: Any) {
+        showAlertWithMovieName()
+    }
 }

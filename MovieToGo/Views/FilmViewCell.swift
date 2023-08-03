@@ -1,7 +1,7 @@
 import UIKit
 
 class FilmViewCell: UITableViewCell {
-
+    
     static let nibName = "FilmViewCell"
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -13,7 +13,7 @@ class FilmViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -31,7 +31,7 @@ class FilmViewCell: UITableViewCell {
         
         posterImageView.layer.cornerRadius = 8
         posterBg.layer.cornerRadius = 12
-
+        
         if let releaseDate = movie.formattedReleaseDate {
             releaseLabel.text = "\(LocalizedKey.release.localized): \(releaseDate)"
         } else {

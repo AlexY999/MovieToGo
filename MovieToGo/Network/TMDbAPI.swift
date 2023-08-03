@@ -1,12 +1,39 @@
 import Foundation
 
+public struct Environment {
+    enum Keys {
+        static let apiURL = "API_URL"
+        static let apiKey = "API_KEY"
+    }
+    
+    // Get the BASE_URL
+    static let apiURL: String = {
+        guard let baseURLProperty = Bundle.main.object(
+            forInfoDictionaryKey: Keys.apiURL
+        ) as? String else {
+            fatalError("\(Keys.apiURL) not found")
+        }
+        return baseURLProperty
+    }()
+    
+    // Get the SOCKET_URL
+    static let apiKey: String = {
+        guard let apiKeyProperty = Bundle.main.object(
+            forInfoDictionaryKey: Keys.apiKey
+        ) as? String else {
+            fatalError("\(Keys.apiKey) not found")
+        }
+        return apiKeyProperty
+    }()
+}
+
 class TMDbAPI {
     enum TMDbAPIEndpoint {
         case popularMovies(page: Int)
         case topRatedMovies(page: Int)
         
         var baseURL: String {
-            return "https://api.themoviedb.org/3"
+            return Environment.apiURL
         }
         
         var path: String {
@@ -19,7 +46,7 @@ class TMDbAPI {
         }
         
         var apiKey: String {
-            return "ed0957c3c3f2acb89d27b394e9612d5e"
+            return Environment.apiKey
         }
         
         var appLanguage: String {

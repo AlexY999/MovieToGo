@@ -36,7 +36,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fmi-Zz-2jj">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="188"/>
-                                        <color key="backgroundColor" name="greyText"/>
+                                        <color key="backgroundColor" name="greyInactive"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="128" id="bt8-V7-1AH"/>
                                             <constraint firstAttribute="height" constant="188" id="tWJ-r5-pIT"/>
@@ -101,6 +101,9 @@
         </namedColor>
         <namedColor name="black">
             <color red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="greyInactive">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="greyText">
             <color red="0.38823529411764707" green="0.38823529411764707" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
