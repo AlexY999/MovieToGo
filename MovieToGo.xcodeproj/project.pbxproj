@@ -23,7 +23,7 @@
 		1F560DAA2A7ADF4C005C5FF0 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F560DA92A7ADF4C005C5FF0 /* HeaderView.xib */; };
 		1F560DAC2A7ADF98005C5FF0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DAB2A7ADF98005C5FF0 /* HeaderView.swift */; };
 		1F560DAE2A7AE5DB005C5FF0 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DAD2A7AE5DB005C5FF0 /* MovieViewController.swift */; };
-		1F560DB02A7AF109005C5FF0 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DAF2A7AF109005C5FF0 /* UIExtensions.swift */; };
+		1F560DB02A7AF109005C5FF0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DAF2A7AF109005C5FF0 /* Extensions.swift */; };
 		1F560DB52A7B098B005C5FF0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F560DB72A7B098B005C5FF0 /* Localizable.strings */; };
 		1F560DBA2A7B0CB8005C5FF0 /* LocalizedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DB92A7B0CB8005C5FF0 /* LocalizedKey.swift */; };
 		1F560DC52A7B1919005C5FF0 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F560DC42A7B1919005C5FF0 /* FavoriteViewController.swift */; };
@@ -51,7 +51,7 @@
 		1F560DA92A7ADF4C005C5FF0 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1F560DAB2A7ADF98005C5FF0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1F560DAD2A7AE5DB005C5FF0 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
-		1F560DAF2A7AF109005C5FF0 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		1F560DAF2A7AF109005C5FF0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1F560DB32A7B097C005C5FF0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
 		1F560DB42A7B097C005C5FF0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1F560DB62A7B098B005C5FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				1F560DB92A7B0CB8005C5FF0 /* LocalizedKey.swift */,
-				1F560DAF2A7AF109005C5FF0 /* UIExtensions.swift */,
+				1F560DAF2A7AF109005C5FF0 /* Extensions.swift */,
 				1F560DC82A7B98AD005C5FF0 /* SegueTags.swift */,
 				1F560DCA2A7BC0AF005C5FF0 /* FontHelper.swift */,
 			);
@@ -278,7 +278,7 @@
 				1F560DC72A7B1A97005C5FF0 /* BaseMovieViewController.swift in Sources */,
 				1F560D8B2A798ED8005C5FF0 /* HomeViewController.swift in Sources */,
 				1F560DAC2A7ADF98005C5FF0 /* HeaderView.swift in Sources */,
-				1F560DB02A7AF109005C5FF0 /* UIExtensions.swift in Sources */,
+				1F560DB02A7AF109005C5FF0 /* Extensions.swift in Sources */,
 				1F560DAE2A7AE5DB005C5FF0 /* MovieViewController.swift in Sources */,
 				1F560D872A798ED8005C5FF0 /* AppDelegate.swift in Sources */,
 				1F560DA52A7A6910005C5FF0 /* FilmViewCell.swift in Sources */,

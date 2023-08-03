@@ -28,7 +28,7 @@ class MovieViewController: UIViewController {
 
         titleLabel.text = movie.title
         overviewLabel.text = movie.overview
-        voteAverage.text = "\(movie.voteAverage)"
+        voteAverage.text = "\(movie.voteAverage.truncate(toPlaces: 2))"
         if let backdropUrl = movie.backdropUrl {
             backdropImageView.loadImage(with: backdropUrl)
             backdropImageView.contentMode = .scaleAspectFill
