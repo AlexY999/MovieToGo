@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="MovieToGo" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Q25-xw-8dE" id="Dal-Oa-79n"/>
+                <outlet property="windowLabel" destination="aN2-En-ZkX" id="E3i-Sq-BRc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bra-35-09R">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="68"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q25-xw-8dE">
+                            <rect key="frame" x="10" y="14" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="K8M-YQ-4hm"/>
+                                <constraint firstAttribute="width" constant="40" id="ajf-ve-nAm"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <imageReference key="image" image="backButton" symbolScale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="onExitButtonClick:" destination="-1" eventType="touchUpInside" id="wl9-Pm-bJP"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-9j-QzO">
+                            <rect key="frame" x="148" y="23" width="97.333333333333314" height="22"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVIE to G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN2-En-ZkX">
+                                    <rect key="frame" x="0.0" y="0.0" width="85.333333333333329" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="Du8-CW-XmQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                    <color key="textColor" name="accentOrange"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconoir_cinema-old" translatesAutoresizingMaskIntoConstraints="NO" id="PTg-tG-znZ">
+                                    <rect key="frame" x="85.333333333333343" y="5" width="12" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="12" id="Qcc-S0-hT1"/>
+                                        <constraint firstAttribute="height" constant="12" id="vVz-Ks-gnx"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Q25-xw-8dE" firstAttribute="centerY" secondItem="bra-35-09R" secondAttribute="centerY" id="GsW-WN-Qp8"/>
+                        <constraint firstItem="sOc-9j-QzO" firstAttribute="centerY" secondItem="bra-35-09R" secondAttribute="centerY" id="KaS-lO-Fqz"/>
+                        <constraint firstItem="Q25-xw-8dE" firstAttribute="leading" secondItem="bra-35-09R" secondAttribute="leading" constant="10" id="hOU-rX-5Rc"/>
+                        <constraint firstItem="sOc-9j-QzO" firstAttribute="centerX" secondItem="bra-35-09R" secondAttribute="centerX" id="ub7-x9-tcZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bra-35-09R" secondAttribute="trailing" id="HtH-qg-oDj"/>
+                <constraint firstItem="bra-35-09R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VjK-gr-JhV"/>
+                <constraint firstAttribute="bottom" secondItem="bra-35-09R" secondAttribute="bottom" id="dGL-gh-KSb"/>
+                <constraint firstItem="bra-35-09R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="u5K-eY-wOs"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backButton" width="20" height="20"/>
+        <image name="iconoir_cinema-old" width="12" height="12"/>
+        <namedColor name="accentOrange">
+            <color red="1" green="0.61176470588235299" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

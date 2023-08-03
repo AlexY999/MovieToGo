@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="filmCell" rowHeight="346" id="ikd-Br-6Gt" customClass="FilmViewCell" customModule="MovieToGo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="346"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ikd-Br-6Gt" id="uge-dc-Ro6">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="346"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0Z-pO-PFx">
+                        <rect key="frame" x="16" y="0.0" width="361" height="326"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ijm-2N-gzM">
+                                <rect key="frame" x="16" y="20" width="329" height="286"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fmi-Zz-2jj">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="188"/>
+                                        <color key="backgroundColor" name="greyText"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="bt8-V7-1AH"/>
+                                            <constraint firstAttribute="height" constant="188" id="tWJ-r5-pIT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8SB-GB-9Ip">
+                                        <rect key="frame" x="148" y="0.0" width="181" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orb-p2-gb6">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-rg-T87">
+                                                <rect key="frame" x="0.0" y="12" width="181" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                                <color key="textColor" name="greyText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cK-w7-5yx">
+                                                <rect key="frame" x="0.0" y="24" width="181" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                                <color key="textColor" name="accentOrange"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ijm-2N-gzM" firstAttribute="top" secondItem="O0Z-pO-PFx" secondAttribute="top" constant="20" id="ce8-Mw-srU"/>
+                            <constraint firstAttribute="trailing" secondItem="ijm-2N-gzM" secondAttribute="trailing" constant="16" id="pJ2-dA-t1v"/>
+                            <constraint firstAttribute="bottom" secondItem="ijm-2N-gzM" secondAttribute="bottom" constant="20" id="xvm-3O-gFI"/>
+                            <constraint firstItem="ijm-2N-gzM" firstAttribute="leading" secondItem="O0Z-pO-PFx" secondAttribute="leading" constant="16" id="zVB-vo-G4C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="O0Z-pO-PFx" secondAttribute="trailing" constant="16" id="CDn-3u-YXH"/>
+                    <constraint firstItem="O0Z-pO-PFx" firstAttribute="top" secondItem="uge-dc-Ro6" secondAttribute="top" id="Ezb-MX-LLX"/>
+                    <constraint firstItem="O0Z-pO-PFx" firstAttribute="leading" secondItem="uge-dc-Ro6" secondAttribute="leading" constant="16" id="Ixe-4D-yBA"/>
+                    <constraint firstAttribute="bottom" secondItem="O0Z-pO-PFx" secondAttribute="bottom" constant="20" id="c5c-mO-HYa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="overviewLabel" destination="BEn-rg-T87" id="5ea-bT-e1X"/>
+                <outlet property="posterBg" destination="O0Z-pO-PFx" id="Jy9-9r-dKQ"/>
+                <outlet property="posterImageView" destination="fmi-Zz-2jj" id="OwJ-NF-bwA"/>
+                <outlet property="releaseLabel" destination="4cK-w7-5yx" id="OzJ-rY-I27"/>
+                <outlet property="titleLabel" destination="Orb-p2-gb6" id="yRu-mc-yep"/>
+            </connections>
+            <point key="canvasLocation" x="127" y="-196"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="accentOrange">
+            <color red="1" green="0.61176470588235299" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="greyText">
+            <color red="0.38823529411764707" green="0.38823529411764707" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
