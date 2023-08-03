@@ -33,14 +33,9 @@ class HeaderView: UIView {
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }
 
-    func configure(onBackButtonClick: (() -> Void)? = nil) {
-        guard let onBackButtonClick = onBackButtonClick else {
-            backButton.isHidden = true
-            return
-        }
-
-        backButton.isHidden = false
-        onBack = onBackButtonClick
+    func configure(onBack: (() -> Void)?) {
+        backButton.isHidden = onBack == nil
+        self.onBack = onBack
     }
 
     @IBAction func onExitButtonClick(_ sender: Any) {

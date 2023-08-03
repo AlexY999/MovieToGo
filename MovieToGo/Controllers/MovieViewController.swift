@@ -14,7 +14,7 @@ class MovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        headerView.configure(onBackButtonClick: onBackButtonClick)
+        headerView.configure(onBack: onBackButtonClick)
 
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
