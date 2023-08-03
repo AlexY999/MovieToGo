@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "8.7"; ObjectID = "Iac-Om-zHk"; */
+"Iac-Om-zHk.text" = "8.7";
+
+/* Class = "UILabel"; text = "Description: "; ObjectID = "OBm-vo-U0T"; */
+"OBm-vo-U0T.text" = "Опис: ";
+
+/* Class = "UILabel"; text = "Release: 16.12.2021 "; ObjectID = "OPh-H0-5Rv"; */
+"OPh-H0-5Rv.text" = "Release: 16.12.2021 ";
+
+/* Class = "UILabel"; text = "Spider Man: No Way Home "; ObjectID = "TlQ-UO-leF"; */
+"TlQ-UO-leF.text" = "Spider Man: No Way Home ";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "U6H-B9-ARQ"; */
+"U6H-B9-ARQ.title" = "Головна";
+
+/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "bIt-IP-E1O"; */
+"bIt-IP-E1O.title" = "Улюблені";
+
+/* Class = "UILabel"; text = "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange’s help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who’ve ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse."; ObjectID = "k23-w8-hBJ"; */
+"k23-w8-hBJ.text" = "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange’s help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who’ve ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse.";
