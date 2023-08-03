@@ -17,7 +17,9 @@ class TabBarViewController: UITabBarController {
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = .white
         appearance.shadowColor = .clear
-
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.8196078431, green: 0.8196078431, blue: 0.8196078431, alpha: 1)]
+        appearance.stackedLayoutAppearance.normal.iconColor = #colorLiteral(red: 0.8196078431, green: 0.8196078431, blue: 0.8196078431, alpha: 1)
+        
         tabBar.standardAppearance = appearance
 
         if #available(iOS 15.0, *) {
