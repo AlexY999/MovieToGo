@@ -7,7 +7,7 @@ extension UIImageView {
             self.image = nil
             return
         }
-        
+
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url),
                let image = UIImage(data: data) {
